@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:background="@null">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/banner"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dip">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:padding="10dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    app:cardCornerRadius="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    app:cardBackgroundColor="@color/darkBlueIcc"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="Description"
+                        android:layout_marginLeft="20sp"
+
+
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txt_Description_edit"
+                        android:layout_width="match_parent"
+                        android:hint="Description"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="bottom"
+                        >
+
+                    </EditText>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:padding="10dp"
+                android:layout_height="65dp">
+
+                <Button
+
+                    android:id="@+id/btnDialog_todolist"
+                    android:layout_width="0dp"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+
+                    android:text="Save"
+
+                    android:textColor="@color/white"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck">
+
+                </Button>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

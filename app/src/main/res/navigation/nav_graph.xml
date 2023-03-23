@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.ignitlabtest.ui.Login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.example.ignitlabtest.ui.UserList.UserListFragment"
+        android:label="fragment_user_list"
+        tools:layout="@layout/fragment_user_list" />
+    <fragment
+        android:id="@+id/singUpFragment"
+        android:name="com.example.ignitlabtest.ui.SignUp.SingUpFragment"
+        android:label="fragment_sing_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.ignitlabtest.ui.UserProfile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/toDoListFragment"
+        android:name="com.example.ignitlabtest.ui.ToDoList.ToDoListFragment"
+        android:label="ToDoListFragment"
+        tools:layout="@layout/fragment_to_do_list"/>
+
+</navigation>
