@@ -18,7 +18,7 @@
         android:layout_height="159dp"
         android:layout_gravity="center"
         android:layout_marginTop="52dp"
-        android:src="@drawable/baseline_view_list_24" />
+        android:src="@drawable/baseline_format_list_bulleted_24" />
 
     <EditText
         android:id="@+id/username"
